@@ -1,0 +1,176 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif; 
+} 
+
+body { 
+    background-color: #fff; 
+    color: #333; 
+} 
+
+/* Cor azul padrão dos ícones */
+.icon-blue {
+    color: #008ecc;
+    font-size: 14px;
+}
+
+/* 1. Barra Utilitária Superior */ 
+.top-utility-bar { 
+    background-color: #f5f5f5; 
+    border-bottom: 1px solid #e0e0e0; 
+    padding: 10px 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 13px; 
+    color: #666; 
+} 
+
+.top-utility-bar .right-options { 
+    display: flex; 
+    gap: 15px; 
+    align-items: center;
+} 
+
+.top-utility-bar a { 
+    text-decoration: none; 
+    color: #666; 
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+} 
+
+.top-utility-bar .zip-code { 
+    font-weight: bold; 
+    color: #333; 
+} 
+
+.top-utility-bar .separator {
+    color: #ddd;
+}
+
+/* 2. Cabeçalho Principal */ 
+.main-header { 
+    background-color: #fff; 
+    padding: 20px 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+.brand-area { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
+} 
+
+/* Menu hambúrguer estilizado em linhas */
+.menu-toggle {
+    background-color: #f3f9fb;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle .line {
+    width: 18px;
+    height: 2px;
+    background-color: #008ecc;
+    border-radius: 2px;
+}
+
+.logo { 
+    font-size: 26px; 
+    font-weight: bold; 
+    color: #008ecc; 
+} 
+
+.search-bar-container { 
+    flex: 0 1 550px; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+} 
+
+.search-bar-container input { 
+    width: 100%; 
+    padding: 12px 15px 12px 40px; 
+    border: 1px solid #e3e8ee; 
+    border-radius: 8px; 
+    background-color: #f3f9fb; 
+    outline: none; 
+    font-size: 14px; 
+    color: #666;
+} 
+
+.search-bar-container .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #008ecc;
+    font-size: 14px;
+}
+
+.user-actions { 
+    display: flex; 
+    gap: 15px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    align-items: center;
+} 
+
+.user-actions a { 
+    text-decoration: none; 
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+} 
+
+.user-actions .vertical-line {
+    color: #ddd;
+}
+
+
+.categories-nav { 
+    background-color: #fff; 
+    padding: 10px 5% 20px 5%; 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+} 
+
+.cat-btn { 
+    padding: 8px 16px; 
+    border-radius: 20px; 
+    background-color: #f3f9fb; 
+    color: #444; 
+    font-size: 13px; 
+    text-decoration: none; 
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+} 
+
+.cat-btn .arrow {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.cat-btn.active { 
+    background-color: #008ecc; 
+    color: #fff; 
+}
+
+.cat-btn.active .arrow {
+    color: #fff;
+}
